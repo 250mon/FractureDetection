@@ -41,7 +41,7 @@ def main():
 
     model.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
     total_sample = train_generator.n
-    num_epoch = 5
+    num_epoch = 100
     model.fit(
         train_generator,
         steps_per_epoch=int(total_sample/batch_size),
